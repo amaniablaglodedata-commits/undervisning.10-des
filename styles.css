@@ -1,0 +1,103 @@
+/* -- VARIABLES --  */
+:root {
+  /* Farge variabler */
+  --primaryColor: #fcc388ff; /* Peach */
+  --secondaryColor: #ffc5c9ff; /* Tea rose red*/
+  --accentColor: #ffffd1ff; /* Cream */
+  --accentColorTwo: #fee5d0ff; /* Champagne pink*/
+  --accentColorThree: #fff6edff; /* Seashell */
+
+  /* Størrelse variabler */
+  --smallSpace: 8px;
+  --mediumSpace: 16px;
+  --largeSpace: 24px;
+  --fullScreen: 100svh;
+
+  /* Skrift variabler */
+  --fontFamily: "Roboto";
+  --fontSize: 18px;
+}
+
+/* -- GLOBAL -- */
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  width: 75px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.hidden {
+  display: none;
+}
+
+/* -- HEADER -- */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 3px solid black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.logo {
+  height: 32px;
+  width: 32px;
+  background-color: white;
+}
+
+/* NAV */
+.navList {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+/* -- MAIN -- */
+.section {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -- FOOTER -- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid black;
+  padding: 16px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: black;
+}
+
+/* -- MEDIA -- */
+@media (max-width: 769px) {
+  .heroIntro,
+  .aboutIntro,
+  .sectionProjects {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+}
